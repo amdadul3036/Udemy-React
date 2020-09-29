@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Person extends Component {
-    render() {
-        return (
+const Person = (props) => {
+    return (
+        <div>
             <div>
-                <h1>I am a person of {Math.floor(Math.random()*30)} years old</h1>
+                <h1>I am {props.name} and I am {props.age} years old</h1>
             </div>
-        );
-    }
-}
+        </div>
+    );
+};
 
 export default Person;
