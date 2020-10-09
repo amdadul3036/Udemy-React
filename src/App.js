@@ -31,7 +31,7 @@ const App = props => {
             <h1>Is it work?</h1>
             <button onClick = {switchEventHandler}>Switch Name</button>
             <Person name = {personState.Persons[0].name} age = {personState.Persons[0].age}>He is a student</Person>
-            <Person name = {personState.Persons[1].name} age = {personState.Persons[1].age}>He is a Teacher</Person>
+            <Person name = {personState.Persons[1].name} age = {personState.Persons[1].age} click = {switchEventHandler}>He is a Teacher</Person>
             <Person name = {personState.Persons[2].name} age = {personState.Persons[2].age}>He is a Coder</Person>
             <Person name = {personState.Persons[3].name} age = {personState.Persons[3].age}>He is a Businessman</Person>
         </div>
