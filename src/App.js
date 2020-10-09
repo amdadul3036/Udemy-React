@@ -5,6 +5,12 @@ import './Components/Person/Person.css'
 
 
 const App = props => {
+  const styleButton = {
+    backgroundColor: 'blue',
+    color:'white',
+    border:'1px solid red',
+    padding:'8px'
+  }
   const [personState , setPersonState] = useState({
     Persons: [
       {name: "Dhrubo" , age: 20},
@@ -30,7 +36,7 @@ const App = props => {
         <div className="App">
             <h1>Hi, I am Creating React App</h1>
             <h1>Is it work?</h1>
-            <button onClick = {switchEventHandler.bind(this , "Maximilian")}>Switch Name</button>
+            <button onClick = {switchEventHandler.bind(this , "Maximilian")} style={styleButton}>Switch Name</button>
             <Person name = {personState.Persons[0].name} age = {personState.Persons[0].age}>He is a student</Person>
             <Person name = {personState.Persons[1].name} age = {personState.Persons[1].age} click = {switchEventHandler.bind(this, 'Dhrubo')}>He is a Teacher</Person>
             <Person name = {personState.Persons[2].name} age = {personState.Persons[2].age}>He is a Coder</Person>
