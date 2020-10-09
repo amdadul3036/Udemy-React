@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react';
 import './App.css';
 import Person from './Components/Person/Person';
+import './Components/Person/Person.css'
 
 
 const App = props => {
